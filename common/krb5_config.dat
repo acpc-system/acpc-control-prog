@@ -1,0 +1,44 @@
+Name: krb5-config/add_servers
+Template: krb5-config/add_servers
+Value: false
+Owners: krb5-config
+Flags: seen
+Variables:
+ dns = Servers for your realm were found in DNS. For most configurations it is best to use DNS to find these servers so that if the set of servers for your realm changes, you need not reconfigure each machine in the realm. However, in special situations, you can locally configure the set of servers for your Kerberos realm.
+
+Name: krb5-config/add_servers_realm
+Template: krb5-config/add_servers_realm
+Value: ACPC.GLOBAL
+Owners: krb5-config
+
+Name: krb5-config/admin_server
+Template: krb5-config/admin_server
+Owners: krb5-config
+
+Name: krb5-config/default_realm
+Template: krb5-config/default_realm
+Value: ACPC.GLOBAL
+Owners: krb5-config
+Flags: seen
+
+Name: krb5-config/found_dns
+Template: krb5-config/found_dns
+Owners: krb5-config
+
+Name: krb5-config/kerberos_servers
+Template: krb5-config/kerberos_servers
+Owners: krb5-config
+
+Name: krb5-config/no_dns
+Template: krb5-config/no_dns
+Owners: krb5-config
+
+Name: krb5-config/read_conf
+Template: krb5-config/read_conf
+Value: true
+Owners: krb5-config
+
+Name: krb5-config/title
+Template: krb5-config/title
+Owners: krb5-config
+
